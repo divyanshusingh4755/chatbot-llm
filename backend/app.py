@@ -6,7 +6,7 @@ from langgraph import LangGraph, Node
 import os
 
 # OpenAI API Key (Hugging Face or GPT-3)
-openai.api_key = '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'
+openai.api_key = os.getenv('open_api_key')
 
 app = FastAPI()
 
